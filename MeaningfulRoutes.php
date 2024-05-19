@@ -41,6 +41,7 @@ function random_redirect() {
 		$query_string = "?" . end( $arr );
 	}
 
+	//Rethink this Section.
 	$required_tag = '';
 	$required_cat = '';
 
@@ -72,8 +73,6 @@ function random_redirect() {
 		wp_safe_redirect( $url, 302 );
 		exit;
 	}
-	
-
 } // end random redirect function
 add_action( 'template_redirect', 'random_redirect' );
 //End Custom Code for a Random Endpoints
